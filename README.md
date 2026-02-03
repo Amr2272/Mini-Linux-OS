@@ -245,6 +245,3 @@ The script uses Debian repos, so Ubuntu should work fine, but the resulting ISO 
 
 Feel free to fork, submit issues, or contribute improvements!
 
----
-
-**Made with ❤️ by a Linux enthusiast**
