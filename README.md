@@ -1,6 +1,10 @@
 # TinyDebian Live - Mini Linux OS
 
-> **⚠️ COMPATIBILITY NOTICE**: Currently, this project is only tested and verified to work on **VMware**. Other hypervisors such as VirtualBox, QEMU, Hyper-V, and bare metal support are not yet available.
+> **⚠️ COMPATIBILITY NOTICE**: This project is **currently only tested and working on VMware**. It does NOT work on:
+> - **Host PC/Bare Metal** (direct installation)
+> - Other hypervisors (VirtualBox, QEMU, Hyper-V, KVM, etc.)
+>
+> VMware-only support is a **current limitation** being addressed. See [Future Plans](#future-plans) for details.
 
 A lightweight, persistent live Linux distribution built on Debian 12 Bookworm with XFCE desktop, Firefox, audio support, VMware clipboard integration, and Google Gemini CLI.
 
@@ -246,4 +250,54 @@ The script uses Debian repos, so Ubuntu should work fine, but the resulting ISO 
 ## Contributing
 
 Feel free to fork, submit issues, or contribute improvements!
+
+## Known Limitations
+
+### Current Limitations
+
+- **VMware-Only Support**: The project currently only works on VMware hypervisor. This is due to tight integration with VMware Tools for clipboard functionality and system detection.
+- **No Bare Metal Support**: Cannot boot directly on host PC hardware. This requires additional device driver support and system detection mechanisms.
+- **No Other Hypervisors**: VirtualBox, QEMU, KVM, Hyper-V, and other hypervisors are not currently supported.
+- **No macOS Host Support**: Building on macOS is not supported; must be on Linux (Debian/Ubuntu).
+
+### Why These Limitations Exist
+
+The build script (`build-tinydebian.sh`) is optimized specifically for VMware's environment:
+- VMware Tools provides the clipboard integration and device detection
+- Boot detection relies on DMI data specific to VMware VMs
+- Persistence setup is streamlined for VMware's virtual hardware
+
+## Future Plans
+
+### Short Term (Next Priority)
+
+- [ ] Add support for **VirtualBox** (most commonly used alternative)
+- [ ] Improve hardware detection to work on **bare metal/host PC**
+- [ ] Add QEMU/KVM support for Linux users
+- [ ] Better error messaging when running on unsupported platforms
+
+### Medium Term
+
+- [ ] Cross-platform build support (macOS, Windows WSL2)
+- [ ] Automated testing on multiple hypervisors
+- [ ] GPU passthrough support for gaming/CUDA workloads
+- [ ] Support for ARM architecture (Raspberry Pi, etc.)
+
+### Long Term Vision
+
+- [ ] Full bare metal support with comprehensive hardware detection
+- [ ] Hyper-V and other enterprise hypervisor support
+- [ ] Custom device drivers for better hardware integration
+- [ ] Become a lightweight alternative to lightweight distros on all platforms
+
+## How to Help
+
+If you want to help expand platform support:
+
+1. **Report Issues**: Test on unsupported platforms and document the errors
+2. **Hardware Detection**: Help identify hardware detection patterns for different platforms
+3. **Driver Porting**: Contribute patches for different hypervisors or hardware
+4. **Testing**: Set up test environments on different platforms
+
+See the [Contributing](#contributing) section above for more details.
 
