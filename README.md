@@ -32,13 +32,13 @@ A lightweight, persistent live Linux distribution built on Debian 12 Bookworm wi
 ```bash
 git clone https://github.com/Amr2272/Mini-Linux-OS.git
 cd Mini-Linux-OS
-chmod +x build-tinydebian.sh
+chmod +x scripts/build-tinydebian.sh
 ```
 
 ### 2. Build the ISO
 
 ```bash
-sudo ./build-tinydebian.sh
+sudo ./scripts/build-tinydebian.sh
 ```
 
 The build will take 10-30 minutes depending on your internet speed. It will:
@@ -185,7 +185,7 @@ $HOME/tiny-debian-build/
 
 - Check your internet connection.
 - Ensure you have at least 15 GB free: `df -h $HOME`
-- Try again with `sudo ./build-tinydebian.sh`
+- Try again with `sudo ./scripts/build-tinydebian.sh`
 
 ### USB Boot Fails
 
