@@ -1,5 +1,7 @@
 # TinyDebian Live - Mini Linux OS
 
+> **⚠️ COMPATIBILITY NOTICE**: Currently, this project is only tested and verified to work on **VMware**. Other hypervisors such as VirtualBox, QEMU, Hyper-V, and bare metal support are not yet available.
+
 A lightweight, persistent live Linux distribution built on Debian 12 Bookworm with XFCE desktop, Firefox, audio support, VMware clipboard integration, and Google Gemini CLI.
 
 ## Features
