@@ -1,5 +1,30 @@
 # TinyDebian Live - Mini Linux OS
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Debian 12](https://img.shields.io/badge/OS-Debian%2012-red.svg)](https://www.debian.org/releases/bookworm/) [![Shell Script](https://img.shields.io/badge/Language-Shell-green.svg)](https://www.gnu.org/software/bash/) [![Build Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com/Amr2272/Mini-Linux-OS)
+
+---
+
+## 📋 Table of Contents
+
+- [🚀 Quick Start](#quick-start)
+- [✨ Features](#features)
+- [📋 Prerequisites](#prerequisites)
+- [🔧 Installation & Usage](#quick-start)
+- [🎯 Default Credentials](#default-credentials)
+- [📦 Included Tools](#included-tools--applications)
+- [⌨️ Keyboard Shortcuts](#keyboard-layout)
+- [🖥️ VMware Features](#vmware-clipboard)
+- [💾 Persistence Setup](#persistence-setup)
+- [🎨 Customization](#customization)
+- [📂 File Structure](#file-structure)
+- [🔍 Troubleshooting](#troubleshooting)
+- [⚡ Performance Tips](#performance-tips)
+- [⚠️ Known Limitations](#known-limitations)
+- [🗺️ Future Plans](#future-plans)
+- [🤝 Contributing](#contributing)
+
+---
+
 > **⚠️ COMPATIBILITY NOTICE**: This project is **currently only tested and working on VMware**. It does NOT work on:
 > - **Host PC/Bare Metal** (direct installation)
 > - Other hypervisors (VirtualBox, QEMU, Hyper-V, KVM, etc.)
