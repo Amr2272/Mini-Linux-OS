@@ -2,14 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Debian 12](https://img.shields.io/badge/OS-Debian%2012-red.svg)](https://www.debian.org/releases/bookworm/) [![Shell Script](https://img.shields.io/badge/Language-Shell-green.svg)](https://www.gnu.org/software/bash/) [![Build Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)](https://github.com/Amr2272/Mini-Linux-OS)
 
-## What is this?
-
-So I got tired of bloated Linux distros and decided to build my own minimal live USB. TinyDebian is what came out - a super lightweight Debian 12 system with XFCE that actually boots fast and doesn't eat all your RAM.
-
-It's basically Debian stripped down to the essentials + the stuff I actually use (Firefox, Node.js, some dev tools). Everything runs from a USB stick, but here's the cool part - it has persistence, so your changes actually stick around after reboot.
-
-Right now it's optimized for VMware because that's where I test everything. Working on bare metal and other VM support, but that's coming later.
-
 ---
 
 ## 📋 Table of Contents
